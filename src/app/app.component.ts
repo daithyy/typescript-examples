@@ -9,7 +9,6 @@ export class AppComponent {
   fullName : string = 'David Brennan';
   fullNameMsg : string;
 
-
   outputFullName() : void {
     console.log("Hello", this.fullName);
   }
