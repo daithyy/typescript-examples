@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   fullName : string = 'David Brennan';
   fullNameMsg : string;
+  total : number;
 
   outputFullName() : void {
     console.log("Hello", this.fullName);
@@ -18,5 +19,10 @@ export class AppComponent {
     console.log(sName);
     this.fullNameMsg = fName + " " + sName;
     console.log("Welcome ", this.fullNameMsg);
+  }
+
+  addNumbers(numOne : HTMLInputElement, numTwo : HTMLInputElement) : void {
+    this.total = +numOne.value + +numTwo.value;
+    //this.total = numOne.valueAsNumber + numTwo.valueAsNumber;
   }
 }

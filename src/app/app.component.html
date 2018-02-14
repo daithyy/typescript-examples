@@ -2,8 +2,13 @@
 <br>
 <br>
 
-First name: <input type="text" name="fname" #fname><br>
-Last name: <input type="text" name="lname" #lname><br>
+<p>First name:</p> <input type="text" name="fname" #fname><br>
+<p>Last name:</p> <input type="text" name="lname" #lname><br>
 <button (click)="outputFNameSName(fname.value, lname.value)">Concatenate Names</button><br>
 <br>
 <p>Result : </p> <p>{{ fullNameMsg }}</p>
+
+<p>First number:</p> <input type="number" name="numOne" #numOne><br>
+<p>Second number:</p> <input type="number" name="numTwo" #numTwo><br>
+<button (click)="addNumbers(numOne, numTwo)">Add Numbers</button>
+<p>Total : </p> <p>{{ total }}</p>
