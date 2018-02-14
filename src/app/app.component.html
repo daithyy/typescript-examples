@@ -12,3 +12,8 @@
 <p>Second number:</p> <input type="number" name="numTwo" #numTwo><br>
 <button (click)="addNumbers(numOne, numTwo)">Add Numbers</button>
 <p>Total : </p> <p>{{ total }}</p>
+
+<p>Enter number:</p> <input type="number" name="numBool" #numBool><br>
+<button (click)="trueOrFalse(numBool.value)">Find Odd or Even Number</button>
+<p>Result : </p> <p>{{ isTrueOrFalse }}</p>
+<p>{{ numberResult }}</p>
